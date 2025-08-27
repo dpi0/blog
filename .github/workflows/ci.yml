@@ -22,8 +22,8 @@ jobs:
       with:
         hugo-version: latest
 
-    - name: Build local ./exampleSite
-      run: hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://dpi0.github.io/blog/
+    - name: Build site
+      run: hugo --minify --gc --destination public --baseURL https://dpi0.github.io/blog/
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
