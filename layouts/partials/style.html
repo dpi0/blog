@@ -22,6 +22,7 @@
     --heading-color: #222;
     --text-color: #444;
     --link-color: #3273dc;
+    --inactive-link-color: gray;
     --visited-color: #8b6fcb;
     --blockquote-color: #222;
   }
@@ -67,12 +68,13 @@
     text-decoration: none;
   }
 
-  a:hover {
-    text-decoration: underline;
-  }
-
   nav a {
     margin-right: 8px;
+    color: var(--inactive-link-color);
+  }
+
+  nav a.active {
+    color: var(--link-color);
   }
 
   strong,
