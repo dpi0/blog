@@ -23,7 +23,7 @@ jobs:
         hugo-version: latest
 
     - name: Build site
-      run: hugo --minify --gc --destination public --baseURL https://dpi0.github.io/blog/
+      run: hugo --minify --gc --destination public
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
