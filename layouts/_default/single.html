@@ -1,14 +1,19 @@
 {{ define "main" }} {{ if eq .Type "blog" }}{{ if not .Params.menu }}
-<h1>{{ .Title }}</h1>
+<!-- data-pagefind-XYZ tags allows only certain elements of the blog to be indexed by pagefind -->
+<!-- https://gluer.org/blog/adding-a-search-bar-for-hugo-with-pagefind/ -->
+<h1 data-pagefind-meta="title">{{ .Title }}</h1>
 <p>
   <i>
-    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+    <time
+      data-pagefind-meta="date[datetime]"
+      datetime='{{ .Date.Format "2006-01-02" }}'
+    >
       {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
     </time>
   </i>
 </p>
 {{ end }}{{ end }}
-<content> {{ .Content }} </content>
+<content data-pagefind-body> {{ .Content }} </content>
 
 {{ if eq .Type "blog" }}{{ if (.Param "enablePostNavigator")}} {{- partial
 "post_navigator.html" . -}} {{ end }}{{ end }}
