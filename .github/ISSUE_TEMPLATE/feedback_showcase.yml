@@ -6,7 +6,6 @@ body:
     attributes:
       value: |
         Thanks for sharing your Hugo ʕ•ᴥ•ʔ Bear Blog story! We love hearing how people are using the theme and what makes it special for them 💝
-
   - type: dropdown
     id: feedback-type
     attributes:
@@ -17,7 +16,6 @@ body:
         - "💡 Share my experience"
         - "❤️ General appreciation"
         - "💭 Other"
-
   - type: textarea
     id: story
     attributes:
@@ -29,22 +27,17 @@ body:
         You can find my site at... (if you'd like to share)
     validations:
       required: true
-
   - type: textarea
     id: customizations
     attributes:
       label: Customizations (optional)
       description: Did you make any interesting customizations to the theme? Feel free to share!
-      placeholder: |
-        I modified... 
-        I added...
-
+      placeholder: "I modified... \nI added...\n"
   - type: textarea
     id: screenshots
     attributes:
       label: Screenshots (optional)
       description: If you'd like to show off your site, you can add screenshots here!
-
   - type: textarea
     id: additional
     attributes:
