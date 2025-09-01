@@ -467,3 +467,38 @@ mark {
     max-width: 90vw;
   }
 }
+.toc-container {
+  margin: 1.5rem 0;
+}
+
+.toc-container summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+.toc-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-container li {
+  margin: 0.2rem 0;
+}
+
+.toc-container li a {
+  text-decoration: none;
+  color: var(--text-inactive-color);
+}
+
+.toc-container li a:hover {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.toc-container ul ul {
+  padding-left: 1.25rem;
+}
+

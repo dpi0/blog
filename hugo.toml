@@ -61,3 +61,14 @@ style = 'friendly'
 lineNos = true
 lineNumbersInTable = false
 codeFences = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser.attribute]
+block = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 4
+ordered = false
