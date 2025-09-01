@@ -1,0 +1,12 @@
+{{ if and (ge .Level 2) (le .Level 4) }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  <a href="#{{ .Anchor | safeURL }}" class="heading-link">
+    {{ .Text | safeHTML }}
+  </a>
+</h{{ .Level }}>
+{{ else }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  {{ .Text | safeHTML }}
+</h{{ .Level }}>
+{{ end }}
+

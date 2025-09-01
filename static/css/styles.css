@@ -99,6 +99,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.heading-link {
+  color: var(--heading-color);
+}
+
 nav {
   padding-top: 20px;
 }
