@@ -467,6 +467,15 @@ mark {
     max-width: 90vw;
   }
 }
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--text-inactive-color);
+  margin-top: 0.5em;
+}
+
 .toc-container {
   margin: 1.5rem 0;
 }

@@ -1,0 +1,31 @@
+<figure>
+  <a
+    href="{{ .Destination | safeURL }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    {{
+    with
+    .Title
+    }}
+    title="{{ . }}"
+    {{
+    end
+    }}
+  >
+    <img
+      src="{{ .Destination | safeURL }}"
+      alt="{{ .Text }}"
+      {{
+      with
+      .Title
+      }}
+      title="{{ . }}"
+      {{
+      end
+      }}
+    />
+  </a>
+  {{- if .Text -}}
+  <figcaption>{{ .Text }}</figcaption>
+  {{- end -}}
+</figure>
