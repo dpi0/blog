@@ -15,10 +15,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Monaspace Neon Regular";
+  src: url("/fonts/MonaspaceNeon-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --width: 720px;
   --font-main: "Bricolage Grotesque", sans-serif;
   --font-secondary: "Bricolage Grotesque", sans-serif;
+  --font-code: "Monaspace Neon Regular";
   --font-scale: 1em;
 
   --background-color: #ffffff;
@@ -35,6 +43,9 @@
   --search-text: #6a6a6a;
   --search-inactive-text: #666666;
   --search-inactive-bg: #f7f7f7;
+
+  --inline-code-bg: #dddddd;
+  --inline-code-text: #111111;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +64,9 @@
     --search-text: #919191;
     --search-inactive-text: #666666;
     --search-inactive-bg: #222222;
+
+    --inline-code-bg: #1e1e2e;
+    --inline-code-text: #ffffff;
   }
 }
 
@@ -157,12 +171,6 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-code {
-  font-family: monospace;
-  padding: 2px;
-  border-radius: 3px;
 }
 
 blockquote {
@@ -515,4 +523,21 @@ figcaption {
 
 .toc-container ul ul {
   padding-left: 1.25rem;
+}
+
+pre code {
+  display: block;
+  padding: 10px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  background-color: transparent;
+  font-family: var(--font-code);
+}
+
+:not(pre) > code {
+  background-color: var(--inline-code-bg);
+  color: var(--inline-code-text);
+  border-radius: 3px;
+  font-family: var(--font-code);
+  font-size: 1rem;
 }
