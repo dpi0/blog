@@ -57,10 +57,10 @@ title = "Hugo ʕ•ᴥ•ʔ Bear"
 # https://gohugo.io/configuration/markup/#highlight
 [markup]
 [markup.highlight]
-style = 'friendly'
 lineNos = true
 lineNumbersInTable = false
 codeFences = true
+noClasses = false
 
 [markup.goldmark.renderer]
 unsafe = true
