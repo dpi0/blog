@@ -1,0 +1,13 @@
+<div class="code-wrapper">
+  {{- with .Attributes.title }}
+  <div class="code-title">{{ . }}</div>
+  {{- end }}
+  <pre
+    tabindex="0"
+    class="chroma"
+  ><code class="language-{{ .Type }}" data-lang="{{ .Type }}">
+      {{- with transform.HighlightCodeBlock . -}}
+      {{ .Inner }}
+      {{- end -}}
+    </code></pre>
+</div>
