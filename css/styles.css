@@ -1,3 +1,6 @@
+@import "syntax-light.css" (prefers-color-scheme: light);
+@import "syntax-dark.css" (prefers-color-scheme: dark);
+
 @font-face {
   font-family: "Bricolage Grotesque";
   src: url("/fonts/BricolageGrotesque-Regular.woff2") format("woff2");
@@ -12,26 +15,39 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Monaspace Neon Regular";
+  src: url("/fonts/MonaspaceNeon-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --width: 720px;
   --font-main: "Bricolage Grotesque", sans-serif;
   --font-secondary: "Bricolage Grotesque", sans-serif;
+  --font-code: "Monaspace Neon Regular";
   --font-scale: 1em;
 
   --background-color: #ffffff;
   --heading-color: #000000;
-  --text-color: #000000;
+  --text-color: #333333;
   --link-color: #3654f2;
   --active-link-color: #000000;
   --inactive-link-color: #697384;
-  --visited-color: #8b6fcb;
   --blockquote-color: #000000;
+  --text-inactive-color: #444444;
 
   --search-bg: #ffffff;
   --search-border: #f5f5f5;
   --search-text: #6a6a6a;
   --search-inactive-text: #666666;
   --search-inactive-bg: #f7f7f7;
+
+  --inline-code-bg: #eeeeee;
+  --inline-code-text: #111111;
+
+  --code-block-title-bg: #eeeeee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,16 +56,21 @@
     --heading-color: #ffffff;
     --text-color: #ffffff;
     --link-color: #c4fe1c;
-    --visited-color: #8b6fcb;
     --active-link-color: #ffffff;
     --inactive-link-color: #697384;
     --blockquote-color: #cccccc;
+    --text-inactive-color: #aaaaaa;
 
     --search-bg: #1a1a1a;
     --search-border: #333333;
     --search-text: #919191;
     --search-inactive-text: #666666;
     --search-inactive-bg: #222222;
+
+    --inline-code-bg: #444444;
+    --inline-code-text: #ffffff;
+
+    --code-block-title-bg: #212126;
   }
 }
 
@@ -77,10 +98,15 @@ body {
 }
 
 h1 {
-  font-size: 2.1em;
+  font-size: 2.3em;
+  color: var(--heading-color);
 }
 
-h2,
+h2 {
+  font-size: 1.8em;
+  color: var(--heading-color);
+}
+
 h3,
 h4,
 h5,
@@ -97,6 +123,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.heading-link {
+  color: var(--heading-color);
 }
 
 nav {
@@ -124,9 +154,10 @@ button {
 }
 
 time {
-  font-family: monospace;
+  /* font-family: monospace; */
   font-style: normal;
   font-size: 15px;
+  color: var(--text-inactive-color);
 }
 
 main {
@@ -144,12 +175,6 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-code {
-  font-family: monospace;
-  padding: 2px;
-  border-radius: 3px;
 }
 
 blockquote {
@@ -181,7 +206,6 @@ footer {
   border-radius: 3px;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  overflow-x: auto;
 }
 
 /* blog post list */
@@ -196,10 +220,7 @@ ul.blog-posts li {
 
 ul.blog-posts li span {
   flex: 0 0 130px;
-}
-
-ul.blog-posts li a:visited {
-  color: var(--visited-color);
+  margin-bottom: 10px;
 }
 
 /* Scrollbar */
@@ -250,7 +271,7 @@ ul.blog-posts li a:visited {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1000;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(9px);
 }
 
 .search-modal.active {
@@ -396,7 +417,7 @@ header nav {
 
 .search-trigger svg {
   display: block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 mark {
@@ -462,4 +483,86 @@ mark {
     white-space: normal;
     max-width: 90vw;
   }
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--text-inactive-color);
+  margin-top: 0.5em;
+}
+
+.toc-container {
+  margin: 1.5rem 0;
+}
+
+.toc-container summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+.toc-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-container li {
+  margin: 0.2rem 0;
+}
+
+.toc-container li a {
+  text-decoration: none;
+  color: var(--text-inactive-color);
+}
+
+.toc-container li a:hover {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.toc-container ul ul {
+  padding-left: 1.25rem;
+}
+
+pre code {
+  display: block;
+  padding: 10px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  background-color: transparent;
+  font-family: var(--font-code);
+}
+
+:not(pre) > code {
+  background-color: var(--inline-code-bg);
+  color: var(--inline-code-text);
+  border-radius: 3px;
+  font-family: var(--font-code);
+  font-size: 1rem;
+}
+
+.code-title {
+  background-color: var(--code-block-title-bg);
+  color: var(--inline-code-text);
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: none;
+}
+
+.code-wrapper pre {
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+}
+
+.code-wrapper {
+  margin-bottom: 2em;
+  max-width: var(--width);
 }
