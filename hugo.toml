@@ -1,6 +1,6 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseURL = "https://blog.i0w.xyz"
+baseURL = "https://i0w.xyz"
 
 # Basic metadata configuration for your blog.
 title = "divyansh's space"
