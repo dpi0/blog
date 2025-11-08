@@ -2,6 +2,7 @@
 title = "Bear"
 menu = "main"
 weight = 20
+showSupportBlock = false
 +++
 
 # Bear
