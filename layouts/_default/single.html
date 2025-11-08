@@ -1,16 +1,17 @@
-{{ define "main" }} {{ if eq .Type "blog" }}{{ if not .Params.menu }}
+{{ define "main" }} {{ if eq .Type "writings" }}{{ if not .Params.menu }}
 <!-- data-pagefind-XYZ tags allows only certain elements of the blog to be indexed by pagefind -->
 <!-- https://gluer.org/blog/adding-a-search-bar-for-hugo-with-pagefind/ -->
 <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+<!-- ORIGINAL DATE OR LAST UPDATED DATE SECTION -->
 <p>
-  <i>
-    <time
-      data-pagefind-meta="date[datetime]"
-      datetime='{{ .Date.Format "2006-01-02" }}'
-    >
-      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
-    </time>
-  </i>
+  {{ $dateFormat := default "02 Jan, 2006" .Site.Params.dateFormat }}
+  <time
+    data-pagefind-meta="date[datetime]"
+    datetime='{{ .Lastmod.Format "2006-01-02" }}'
+  >
+    {{ if ne .Date .Lastmod }} Last updated: {{ .Lastmod.Format $dateFormat }}
+    {{ else }} {{ .Date.Format $dateFormat }} {{ end }}
+  </time>
 </p>
 
 <div class="toc-container">
@@ -20,17 +21,34 @@
   </details>
 </div>
 {{ end }}{{ end }}
+
+<!-- CONTENT SECTION -->
 <content data-pagefind-body> {{ .Content }} </content>
 
-{{ if eq .Type "blog" }}{{ if (.Param "enablePostNavigator")}} {{- partial
+{{ if eq .Type "writings" }}{{ if (.Param "enablePostNavigator")}} {{- partial
 "post_navigator.html" . -}} {{ end }}{{ end }}
 
+<!-- TAGS SECTION -->
 <p>
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
 
+<!-- ORIGINALLY PUBLISHED DATE SECTION -->
+<p>
+  {{ $dateFormat := default "02 Jan, 2006" .Site.Params.dateFormat }}
+  <time
+    data-pagefind-meta="date[datetime]"
+    datetime='{{ .Lastmod.Format "2006-01-02" }}'
+  >
+    {{ if ne .Date .Lastmod }} Originally published: {{ .Date.Format $dateFormat
+    }} {{ end }}
+  </time>
+</p>
+
+<!-- DONATION SECTION -->
+{{ if .Params.showSupportBlock }}
 <p>Did this post help you?</p>
 
 <a href="https://ko-fi.com/E1E11KTJA6" target="_blank">
@@ -41,4 +59,4 @@
   />
 </a>
 
-{{ end }}
+{{ end }} {{ end }}
