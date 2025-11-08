@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on divyansh's space</title><link>https://i0w.xyz/</link><description>Recent content in Home on divyansh's space</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright © 2020, Jane Doe.</copyright><lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://i0w.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>https://i0w.xyz/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://i0w.xyz/hugo/</guid><description>&lt;h1 id="hugo"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on divyansh's space</title><link>https://i0w.xyz/</link><description>Recent content in Home on divyansh's space</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright © 2020, Jane Doe.</copyright><lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://i0w.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>https://i0w.xyz/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://i0w.xyz/hugo/</guid><description>&lt;h1 id="hugo"&gt;
  Hugo
 &lt;/h1&gt;
 
@@ -25,7 +25,33 @@
 &lt;/p&gt;
 &lt;p&gt;There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.&lt;/p&gt;
 &lt;p&gt;Bear is all you need to build a fantastic and optimized site or blog. It works perfectly on &lt;strong&gt;any&lt;/strong&gt; viewing device. All you need to focus on is writing good content.&lt;/p&gt;
-&lt;p&gt;Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and &lt;strong&gt;optimized for search engines.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Markdown Syntax Guide</title><link>https://i0w.xyz/writings/markdown-syntax/</link><pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate><guid>https://i0w.xyz/writings/markdown-syntax/</guid><description>&lt;p&gt;For a quick cheatsheet, check out &lt;a
+&lt;p&gt;Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and &lt;strong&gt;optimized for search engines.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Economic Systems</title><link>https://i0w.xyz/writings/economic-systems/</link><pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate><guid>https://i0w.xyz/writings/economic-systems/</guid><description>&lt;p&gt;It is different from &lt;a
+ href="https://en.wikipedia.org/wiki/List_of_political_ideologies"
+ target="_blank" rel="noopener noreferrer"&gt;
+ political ideologies&lt;span style="white-space: nowrap"&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;how a society takes decisions about production, distribution, and consumption. it is a part of &lt;strong&gt;social system&lt;/strong&gt; which itself is a part of &lt;strong&gt;action systems&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Who owns resources (production)&lt;/p&gt;
+&lt;p&gt;How goods and services are made and shared (distribution)&lt;/p&gt;
+&lt;p&gt;Who gets what (wealth, food, healthcare eg consumption)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Traditional Economy&lt;/strong&gt; no formal planning or markets, like in a village. Decisions are based on customs, traditions, and habits passed down through generations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Command Economy&lt;/strong&gt; collective/state ownership. government or a central authority makes all major economic decisions. (socialism/communism)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Market Economy&lt;/strong&gt; private ownership. Decisions are made by individuals and businesses in a free market. (capitalism)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mixed Economy&lt;/strong&gt; combination of economies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feudal Economy&lt;/strong&gt; feudal lords and peasants&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Barter Economy&lt;/strong&gt; goods and services (stuff) are exchanged directly for other goods and services&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gift Economy&lt;/strong&gt; stuff is given directly (no money) as a &amp;ldquo;gift&amp;rdquo; because you care hoping that you will get something back later (again not money but rememberance of your kindness). works in small trust based communities. in open source software world. crowdfunding.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="social-system"&gt;
+ &lt;a href="#social-system" class="heading-link"&gt;
+ social system
+ &lt;/a&gt;
+&lt;/h3&gt;
+
+
+&lt;p&gt;it is the way a society is organized.&lt;/p&gt;</description></item><item><title>Markdown Syntax Guide</title><link>https://i0w.xyz/writings/markdown-syntax/</link><pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate><guid>https://i0w.xyz/writings/markdown-syntax/</guid><description>&lt;p&gt;For a quick cheatsheet, check out &lt;a
  href="https://simplemde.com/markdown-guide"
  target="_blank" rel="noopener noreferrer"&gt;
  https://simplemde.com/markdown-guide&lt;span style="white-space: nowrap"&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;
