@@ -2,6 +2,7 @@
 title = "Hugo"
 menu = "main"
 weight = 10
+showSupportBlock = false
 +++
 
 # Hugo

@@ -2,6 +2,7 @@
 title = "Home"
 menu = "main"
 weight = 1
+showSupportBlock = false
 +++
 
 # A match made in heaven
