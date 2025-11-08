@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://dpi0.github.io/blog/sitemap.xml
+Sitemap: https://i0w.xyz/sitemap.xml
