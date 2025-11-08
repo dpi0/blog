@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on divyansh's space</title><link>https://i0w.xyz/</link><description>Recent content in Home on divyansh's space</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright © 2020, Jane Doe.</copyright><lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://i0w.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>https://i0w.xyz/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://i0w.xyz/hugo/</guid><description>&lt;h1 id="hugo"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on divyansh's space</title><link>https://i0w.xyz/</link><description>Recent content in Home on divyansh's space</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright © 2020, Jane Doe.</copyright><atom:link href="https://i0w.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>https://i0w.xyz/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://i0w.xyz/hugo/</guid><description>&lt;h1 id="hugo"&gt;
  Hugo
 &lt;/h1&gt;
 
@@ -25,10 +25,4 @@
 &lt;/p&gt;
 &lt;p&gt;There is a website obesity crisis. Bloated websites are full of scripts, ads, and trackers slowing your readers down every time they try to read your well-crafted content.&lt;/p&gt;
 &lt;p&gt;Bear is all you need to build a fantastic and optimized site or blog. It works perfectly on &lt;strong&gt;any&lt;/strong&gt; viewing device. All you need to focus on is writing good content.&lt;/p&gt;
-&lt;p&gt;Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and &lt;strong&gt;optimized for search engines.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Markdown Syntax Guide</title><link>https://i0w.xyz/markdown-syntax-guide/</link><pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate><guid>https://i0w.xyz/markdown-syntax-guide/</guid><description>&lt;p&gt;For a quick cheatsheet, check out &lt;a
- href="https://simplemde.com/markdown-guide"
- target="_blank" rel="noopener noreferrer"&gt;
- https://simplemde.com/markdown-guide&lt;span style="white-space: nowrap"&gt;&amp;thinsp;↗&lt;/span&gt;&lt;/a&gt;
-.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Bear makes it simple to publish content online and grow an audience while keeping pages tiny, fast, and &lt;strong&gt;optimized for search engines.&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
