@@ -6,3 +6,12 @@
 
 <!-- Pagefind CSS -->
 <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+
+<!-- Umami Analytics -->
+{{ if .Site.Params.enableUmamiAnalytics }}
+<script
+  defer
+  src="https://cloud.umami.is/script.js"
+  data-website-id="3dd8e571-1965-432b-a53f-39514f124aa4"
+></script>
+{{ end }}
